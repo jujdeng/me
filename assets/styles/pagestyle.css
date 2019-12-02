@@ -50,7 +50,30 @@ h1 {
     top: 25%;
     left: 500px;
 }
-
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+}
+#g, #p {
+    width: 50px;
+}
+h2 {
+    position: absolute;
+    top: 480px;
+    right: 280px;
+    font-family: 'Solway';
+    color: #202421;
+    font-size: 30px;
+}
+p {
+    font-family: 'Solway';
+    color: #202421;
+    font-size: 20px;
+}
 
   
 .backgroud {

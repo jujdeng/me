@@ -71,10 +71,25 @@ body {
     bottom: 0;
 }
 
+.table-stand {
+    display: flex;
+    flex-direction: column;
+}
 
-/*animation of steam separate from mug*/
-/*change opacity as it moves up*/
-/*css page flipping animation, codrops*/
-/*navigation bar as tabs/bookmarks in the book*/
+@keyframes swirl {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+}
+
+#steam: hover {
+    animation-name: swirl 2s 0s infinite;
+}
+
 
 
