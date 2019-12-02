@@ -1,0 +1,106 @@
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+nav li {
+    margin-left:100px;
+}
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Solway';
+    color: #202421;
+    font-size: 40px;
+}
+nav a:hover {
+    font-size: 150%;
+}
+nav a:active {
+    font-size: 150%;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+}
+h1 {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    text-decoration: underline;
+    font-family: 'Solway';
+    color: #202421;
+    font-size: 50px;
+}
+.nav-bar {
+    position: absolute;
+    top: 360px;
+    left: 150px;
+}
+.me {
+    position: absolute;
+    top: 25%;
+    left: 500px;
+}
+
+
+  
+.backgroud {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#carousel, .carousel-image {
+  width: 500px;
+  height: 400px;
+}
+#carousel {
+    position: relative;
+    overflow: hidden;
+}
+#carousel-image-row {
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    left: 0px;
+  
+    transition: 0.3s left;
+}
+.carousel-image img {
+    height: 100%;
+    width: auto;
+}
+.hidden {
+    visibility: hidden;
+}
+#carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+    z-index: 1;
+}
+#button-next, #button-previous {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}		

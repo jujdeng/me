@@ -1,0 +1,80 @@
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+nav li {
+    margin-left:100px;
+}
+nav a {
+    font-family: 'Solway';
+    color: #202421;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a:hover {
+    font-size: 150%;
+}
+nav a:active {
+    font-size: 150%;
+}
+
+body {
+    background-color: #F7F4F4;
+}
+
+.floor {
+    background-color: #E3D9D9;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;  /*bottom layer*/
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.shelf {
+    position: absolute;
+    left: 0;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    position: absolute; /*for the whole row, not positioning individual images*/
+    top: 0;
+}
+
+.bottom-row {
+    display: flex;
+    flex-direction: row;
+    position: absolute; /*for the whole row*/
+    bottom: 0;
+}
+
+
+/*animation of steam separate from mug*/
+/*change opacity as it moves up*/
+/*css page flipping animation, codrops*/
+/*navigation bar as tabs/bookmarks in the book*/
+
+
