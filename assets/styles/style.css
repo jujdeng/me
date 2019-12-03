@@ -23,7 +23,7 @@ nav a {
     cursor: pointer;
 }
 nav a:hover {
-    font-size: 150%;
+    font-size: 50px;
 }
 nav a:active {
     font-size: 150%;
@@ -49,7 +49,44 @@ body {
 
 .shelf {
     position: absolute;
-    left: 0;
+    margin: 2%;     /*on either side*/
+    width: 26%;    /*total adds to 30%*/
+}
+
+#lamp {
+    width: 20%;        /*percentages within the 70% of the row*/
+}
+#chair {
+    width: 30%;
+}
+#mug {
+    width: 40%;
+    align-content: center;
+}
+#steam {
+    width: 30%;
+}
+#stand {
+    width: 80%;
+}
+#plants2 {
+    width: 30%;
+}
+#window {
+    width: 20%;
+    margin-right: 5%;
+    position: relative;
+}
+#window img {
+    position: absolute;
+    top: 20px;
+} 
+#plants1 {
+    width: 20%;
+}
+#floating {
+    width: 30%;
+    top: 15%;
 }
 
 .rows {
@@ -62,6 +99,9 @@ body {
     flex-direction: row;
     position: absolute; /*for the whole row, not positioning individual images*/
     top: 0;
+    right: 0;
+    width: 70%;
+    height: 30%;
 }
 
 .bottom-row {
@@ -69,11 +109,15 @@ body {
     flex-direction: row;
     position: absolute; /*for the whole row*/
     bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
 }
 
 .table-stand {
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
 @keyframes swirl {
@@ -83,12 +127,12 @@ body {
     }
     to {
         opacity: 0.5;
-        transform: translateY(10px);
+        transform: translateY(-10px);
     }
 }
 
-#steam: hover {
-    animation-name: swirl 2s 0s infinite;
+#steam:hover {
+    animation: swirl 2s 0s infinite;
 }
 
 

@@ -6,11 +6,10 @@ nav ul {
     margin-block-end: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    text-align: left;
 }
-
 nav li {
-    margin-left:100px;
+    margin-left:5%;
 }
 nav a {
     text-decoration: none;
@@ -20,21 +19,38 @@ nav a {
     font-size: 40px;
 }
 nav a:hover {
-    font-size: 150%;
+    font-size: 45px;
 }
-nav a:active {
-    font-size: 150%;
+nav a:active {         /*HFHFHDHFH*/
+    font-size: 45px;
 }
 
 
-.container {
+
+.backgroud {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
     position: relative;
     text-align: center;
 }
-h1 {
+.pages {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left-page {
+    display: flex;
+    flex-direction: column
+}
+h1 {               /* contents */
     position: absolute;
-    top: 250px;
-    left: 300px;
+    top: 15%;
+    left: 22%;
     text-decoration: underline;
     font-family: 'Solway';
     color: #202421;
@@ -42,27 +58,23 @@ h1 {
 }
 .nav-bar {
     position: absolute;
-    top: 360px;
-    left: 150px;
+    top: 23%;
+    left: 22%;
 }
-.me {
-    position: absolute;
-    top: 25%;
-    left: 500px;
-}
-.about-me {
+
+
+.right-page {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
 }
-.links {
-    display: flex;
-    flex-direction: row;
+.me {
+    /*position: absolute;*/
+    top: 30%;          
+    right: 22%;
 }
-#g, #p {
-    width: 50px;
-}
-h2 {
-    position: absolute;
+h2 {                        /*"Hi I'm Julia*/
     top: 480px;
     right: 280px;
     font-family: 'Solway';
@@ -73,15 +85,22 @@ p {
     font-family: 'Solway';
     color: #202421;
     font-size: 20px;
+    width: 25%;
+    text-align: left;
+    /* transform: translateX(38vw); */
+}
+.links {
+    display: flex;
+    flex-direction: row;
+}
+#g, #p {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
 }
 
   
-.backgroud {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 
 

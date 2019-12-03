@@ -1,66 +1,17 @@
 
-/*let lamp = document.getElementById("lamp");
-
-function toggleLight() {
-    //change image src on click
-    //use hidden? 
-}
-
-lamp.onClick = toggleLight;
-window.onClick = toggleLight;*/
-
-
+let night = false;
 let lamp = document.getElementById("lamp");
 lamp.onclick = function() {
-  lamp.src = "assets/images/lamp-off.svg"
-}
-
-let window = document.getElementById("window");
-window.onclick = function() {
-    window.src = "assets/images/night.svg"
-}
-
-
-let carouselWidth = 400; 
-
-let prevButton = document.getElementById("button-previous");
-let nextButton = document.getElementById("button-next");
-let imageRow = document.getElementById("carousel-image-row");
-
-let imageNum = 0;
-
-function showNextImage() {
-	imageNum++;
-	checkControls();
-	let pixels = -carouselWidth * imageNum;
-	imageRow.style.left = pixels + "px";
-}
-
-nextButton.onclick = showNextImage; 
-
-function showPrevImage() {
-	imageNum--;
-	checkControls();
-	let pixels = -carouselWidth * imageNum;
-	imageRow.style.left = pixels + "px";
-}
-
-prevButton.onclick = showPrevImage; 
-
-let totalImages = document.getElementsByClassName("carousel-image").length;
-
-function checkControls() {
-	if (imageNum == 0) {
-		prevButton.classList.add("hidden");
+	if(night==false){
+		lampImg.src = "assets/images/lamp-on.svg"
+		windowImg.src = "assets/images/night.svg"
+		night = true;
 	}
-	else if (prevButton.classList.contains("hidden")) {
-		prevButton.classList.remove("hidden");
-	}
-
-	if (imageNum == totalImages-1) {
-		nextButton.classList.add("hidden");
-	}
-	else if (nextButton.classList.contains("hidden")) {
-		nextButton.classList.remove("hidden");
+	else{
+		lampImg.src = "assets/images/lamp-off.svg"
+		windowImg.src = "assets/images/day.svg"
+		night = false;
 	}
 }
+
+
