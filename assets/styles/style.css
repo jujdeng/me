@@ -6,16 +6,15 @@ nav ul {
     margin-block-end: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    
-}
-nav {
-    display: flex;
-    flex-direction: column;
 }
 nav li {
-    margin-left:100px;
+   /* margin-left: 7%; */
     padding: 27px;
+}
+.nav-bar {
+    z-index: 1;
+    position: relative;
+    transform: translate(7%, 40%);
 }
 nav a {
     font-family: 'Solway';
@@ -25,29 +24,27 @@ nav a {
     cursor: pointer;
 }
 nav a:hover {
-    font-size: 50px;
+    font-size: 45px;
 }
+.selected {
+    font-weight: bold;
+}
+
+
 
 
 body {
     background-color: #F7F4F4;
     overflow: hidden;
 }
-
 .floor {
     background-color: #E3D9D9;
+    left: 0;
     width: 100%;
     height: 20%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: -1;  /*bottom layer*/
-}
-
-.nav-bar {
-    transform: translateY(41%);
-    transform: translateX(1%);
-    z-index: 1;
-    position: relative;
 }
 
 
@@ -66,46 +63,11 @@ body {
     top: 5%;
 }
 
-#lamp {
-    width: 20%;        /*percentages within the 70% of the row*/
-}
-#chair {
-    width: 30%;
-}
-#mug {
-    width: 40%;
-    align-content: center;
-}
-#steam {
-    width: 30%;
-}
-#stand {
-    width: 80%;
-}
-#plants2 {
-    width: 30%;
-}
-#window {
-    width: 20%;
-    margin-right: 5%;
-    position: relative;
-}
-#window img {
-    position: absolute;
-    top: 20px;
-} 
-#plants1 {
-    width: 20%;
-}
-#floating {
-    width: 30%;
-    top: 15%;
-}
-
 .rows {
     display: flex;
     flex-direction: column;
 }
+
 
 .top-row {
     display: flex;
@@ -115,7 +77,30 @@ body {
     right: 0;
     width: 70%;
     height: 30%;
+}                                    /* window:40 + plants1:25 + floating: 35*/
+#window {
+    /*position: relative;
+    top: 20%;*/
+    width: 23%;
+    margin-left: 17%;
+    transform: translateY(8vh);
 }
+/* #window img {
+    position: absolute;
+    top: 20px;
+} */
+#plants1 {
+    width: 20%;
+    margin-left: 5%;
+}
+#floating {
+    width: 25%;
+    margin: 5%; /* on both sides adds up*/
+    transform: translateY(15vh);
+    /*position: relative;
+    top: 30%;*/
+}
+
 
 .bottom-row {
     display: flex;
@@ -126,12 +111,51 @@ body {
     width: 70%;
     height: 70%;
 }
-
+#lamp {
+    position: relative;
+    width:18%;        /*percentages within the 70% of the row*/
+    margin: 1%;
+    top: 5%;
+}                                               /* lamp:20 + chair:30 + table-stand:20 + plants2:30*/
+#button {
+    position: absolute;
+    width: 20%;
+    top: 38%;
+    left: 46%;
+}
+#chair {
+    width: 30%;
+    transform: translateY(18vh);
+}
 .table-stand {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 18%;
+    margin-left: 2%;
+    transform: translateY(22vh);
+    align-items: center;
 }
+#mug {
+    width: 40%;
+    margin-left: 8%;
+    transform: translateY(3vh);
+}
+#steam {
+    width: 30%;
+    transform: translateY(3vh);
+}
+#stand {
+    width: 80%;
+}
+#plants2 {
+    width: 27%;
+    margin-right: 3%;
+    transform: translateY(18vh);
+}
+
+
+
+
 
 @keyframes swirl {
     from {

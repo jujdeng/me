@@ -1,7 +1,7 @@
 
 let night = false;
-let lamp = document.getElementById("lamp");
-lamp.onclick = function() {
+let button = document.getElementById("button");
+button.onclick = function() {
 	if(night==false){
 		lampImg.src = "assets/images/lamp-on.svg"
 		windowImg.src = "assets/images/night.svg"

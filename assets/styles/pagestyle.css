@@ -8,20 +8,19 @@ nav ul {
     flex-direction: column;
     text-align: left;
 }
-nav li {
-    margin-left:5%;
-}
 nav a {
-    text-decoration: none;
-    cursor: pointer;
     font-family: 'Solway';
     color: #202421;
     font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
 }
 nav a:hover {
     font-size: 45px;
 }
-
+.selected {
+    font-weight: bold;
+}
 
 
 .backgroud {
@@ -36,6 +35,13 @@ body {
     text-align: center;
     overflow: hidden;
 }
+.nav-bar {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    transform: translateY(25vh);
+    z-index: 1;
+}
 .pages {
     display: flex;
     flex-direction: row;
@@ -48,19 +54,13 @@ body {
 }
 h1 {               /* contents */
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 22%;
-    transform: translateY(15vh);
+    /*transform: translateY(15vh);*/
     text-decoration: underline;
     font-family: 'Solway';
     color: #202421;
     font-size: 50px;
-}
-.nav-bar {
-    position: absolute;
-    top: 23%;
-    left: 22%;
-    transform: translateY(25vh);
 }
 
 
@@ -74,33 +74,36 @@ h1 {               /* contents */
     transform: translateY(15vh);
 }
 .me {
-    /*position: absolute;*/
-    /*top: 30%;          
+    /*position: absolute;
+    top: 30%;          
     right: 22%;*/
+    width: 85%;
 }
 h2 {                        /*"Hi I'm Julia*/
-    top: 480px;
-    right: 280px;
+    /*top: 480px;
+    right: 280px;*/
     font-family: 'Solway';
     color: #202421;
     font-size: 30px;
+    left: 60%;
 }
 p {
     font-family: 'Solway';
     color: #202421;
     font-size: 20px;
-    width: 25%;
+    width: 30%;
     text-align: left;
     /* transform: translateX(38vw); */
 }
 .links {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    width: 30%;
+    
 }
-#g, #p {
-    width: 40%;
-    height: 60%;
+#g, #p, #v {
+    width: 60%;
+    height: 70%;
 }
 
 
@@ -108,8 +111,8 @@ p {
 
 
 #carousel, .carousel-image {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
 }
 #carousel {
     /*z-index: 1;
