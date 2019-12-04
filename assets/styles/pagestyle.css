@@ -89,7 +89,7 @@ h2 {                        /*"Hi I'm Julia*/
     font-size: 30px;
     margin-left: 1%;
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 0;
 }
 p {
     font-family: 'Solway';

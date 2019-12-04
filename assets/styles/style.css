@@ -116,7 +116,13 @@ body {
     width: 18%;        /*percentages within the 70% of the row*/
     margin: 1%;
     top: 5%;
-}                                   /* lamp:20 + chair:30 + table-stand:20 + plants2:30*/                                           
+}                                   /* lamp:20 + chair:30 + table-stand:20 + plants2:30*/     
+#light-message {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}                                      
 #button {
     position: absolute;
     width: 20%;
@@ -132,16 +138,20 @@ body {
     flex-direction: column;
     width: 18%;
     margin-right: 2%;
-    transform: translateY(22vh);
+    transform: translateY(10vh);
     align-items: center;
 }
-#mug {
+#tea-message {
     width: 40%;
-    margin-left: 8%;
     transform: translateY(3vh);
 }
 #steam {
     width: 30%;
+    transform: translateY(3vh);
+}
+#mug {
+    width: 40%;
+    margin-left: 8%;
     transform: translateY(3vh);
 }
 #stand {
@@ -163,13 +173,13 @@ body {
         opacity: 1;
     }
     to {
-        transform: translateY(-3.1vh);
-        opacity: 0;
+        transform: translateY(-10px);
+        opacity: 0.1;
     }
 }
 
 #steam {
-    z-index: 1000;
+    z-index: 1;
 }
 
 #steam:hover {
