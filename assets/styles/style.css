@@ -7,6 +7,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
+    
 }
 nav {
     display: flex;
@@ -14,6 +15,7 @@ nav {
 }
 nav li {
     margin-left:100px;
+    padding: 27px;
 }
 nav a {
     font-family: 'Solway';
@@ -25,12 +27,11 @@ nav a {
 nav a:hover {
     font-size: 50px;
 }
-nav a:active {
-    font-size: 150%;
-}
+
 
 body {
     background-color: #F7F4F4;
+    overflow: hidden;
 }
 
 .floor {
@@ -42,15 +43,27 @@ body {
     z-index: -1;  /*bottom layer*/
 }
 
+.nav-bar {
+    transform: translateY(41%);
+    transform: translateX(1%);
+    z-index: 1;
+    position: relative;
+}
+
+
+
 .sections {
     display: flex;
     flex-direction: row;
 }
 
 .shelf {
+    z-index: 0;
+    transform: translateY(5%);
     position: absolute;
     margin: 2%;     /*on either side*/
     width: 26%;    /*total adds to 30%*/
+    top: 5%;
 }
 
 #lamp {
@@ -126,13 +139,17 @@ body {
         opacity: 1;
     }
     to {
-        opacity: 0.5;
         transform: translateY(-10px);
+        opacity: 0;
     }
 }
 
+#steam {
+    z-index: 1000;
+}
+
 #steam:hover {
-    animation: swirl 2s 0s infinite;
+    animation: swirl 3s ease-in-out 0s infinite alternate;
 }
 
 

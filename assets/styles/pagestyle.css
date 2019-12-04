@@ -21,9 +21,6 @@ nav a {
 nav a:hover {
     font-size: 45px;
 }
-nav a:active {         /*HFHFHDHFH*/
-    font-size: 45px;
-}
 
 
 
@@ -32,10 +29,12 @@ nav a:active {         /*HFHFHDHFH*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
 }
 body {
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 .pages {
     display: flex;
@@ -51,6 +50,7 @@ h1 {               /* contents */
     position: absolute;
     top: 15%;
     left: 22%;
+    transform: translateY(15vh);
     text-decoration: underline;
     font-family: 'Solway';
     color: #202421;
@@ -60,6 +60,7 @@ h1 {               /* contents */
     position: absolute;
     top: 23%;
     left: 22%;
+    transform: translateY(25vh);
 }
 
 
@@ -67,12 +68,15 @@ h1 {               /* contents */
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 15%;          
+    left: 30%;
+    transform: translateY(15vh);
 }
 .me {
     /*position: absolute;*/
-    top: 30%;          
-    right: 22%;
+    /*top: 30%;          
+    right: 22%;*/
 }
 h2 {                        /*"Hi I'm Julia*/
     top: 480px;
@@ -92,14 +96,12 @@ p {
 .links {
     display: flex;
     flex-direction: row;
+    align-items: left;
 }
 #g, #p {
-    width: 50px;
-    height: 50px;
-    padding: 20px;
+    width: 40%;
+    height: 60%;
 }
-
-  
 
 
 
@@ -110,8 +112,12 @@ p {
   height: 400px;
 }
 #carousel {
+    /*z-index: 1;
+    position: absolute;
+    vertical-align: top;*/
     position: relative;
     overflow: hidden;
+    transform: translate(25vw,5vh);
 }
 #carousel-image-row {
     display: flex;
@@ -133,11 +139,9 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  
     width: 100%;
     display: flex;
     justify-content: space-between;
-  
     z-index: 1;
 }
 #button-next, #button-previous {
