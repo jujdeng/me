@@ -24,7 +24,7 @@ nav a {
     cursor: pointer;
 }
 nav a:hover {
-    font-size: 45px;
+    font-weight: bold;
 }
 .selected {
     font-weight: bold;
@@ -113,14 +113,14 @@ body {
 }
 #lamp {
     position: relative;
-    width:18%;        /*percentages within the 70% of the row*/
+    width: 18%;        /*percentages within the 70% of the row*/
     margin: 1%;
     top: 5%;
-}                                               /* lamp:20 + chair:30 + table-stand:20 + plants2:30*/
+}                                   /* lamp:20 + chair:30 + table-stand:20 + plants2:30*/                                           
 #button {
     position: absolute;
     width: 20%;
-    top: 38%;
+    top: 35%;
     left: 46%;
 }
 #chair {
@@ -131,7 +131,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 18%;
-    margin-left: 2%;
+    margin-right: 2%;
     transform: translateY(22vh);
     align-items: center;
 }
@@ -159,11 +159,11 @@ body {
 
 @keyframes swirl {
     from {
-        transform: translateY(0px);
+        transform: translateY(3vh);
         opacity: 1;
     }
     to {
-        transform: translateY(-10px);
+        transform: translateY(-3.1vh);
         opacity: 0;
     }
 }
